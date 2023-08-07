@@ -4,6 +4,7 @@ ENV TOMCAT_VERSION 9.0.78
 ENV CATALINA_HOME /usr/local/tomcat
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 ENV PATH $CATALINA_HOME/bin:$PATH
+ENV DEBIAN_FRONTEND=noninteractive 
 
 RUN apt update 
 RUN apt install git -y
