@@ -9,5 +9,5 @@ WORKDIR /home/regina/homework/
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
 WORKDIR /home/regina/homework/boxfuse-sample-java-war-hello
 RUN mvn package 
-RUN cp /home/regina/homework/boxfuse-sample-java-war-hello/target/hello-1.0.war /var/lib/tomacat9/webapps/
+RUN cp /home/regina/homework/boxfuse-sample-java-war-hello/target/hello-1.0.war /var/lib/tomcat9/webapps/
 CMD ["catalina.sh", "run"]
